@@ -110,6 +110,11 @@ namespace Laiterekisteri
             Device device2 = new Device("Toinen laite");
             Console.WriteLine(device2.Identity);
 
+            // Set device2 warranty to 60 months
+            device2.Warranty = 60;
+
+            Console.WriteLine("Takuutiedoksi päivitetty: " + device2.Warranty);
+
             // Let's create one more device with all parameters
             Device device3 = new Device("Kolmas kone", "8.2.2024", 150.00d, 36);
 
